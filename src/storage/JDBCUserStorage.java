@@ -35,7 +35,7 @@ public class JDBCUserStorage {
                 String firstName = resultSet.getString(1);
                 String secondName = resultSet.getString(2);
                 String email = resultSet.getString(3);
-                List<Phone> phones = resultSet.getObject(4,List<String> phones);
+                String phones = resultSet.getString(4);
                 User user = new User(firstName,secondName,email,phones);
                 users.add(user);
             }

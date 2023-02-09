@@ -8,10 +8,10 @@ public class User {
     private final String firstName;
     private final String secondName;
     private final String email;
-    private final List<Phone> phones;
+    private final String phones;
 
 
-    public User(String firstName, String secondName, String email, List<Phone> phones) {
+    public User(String firstName, String secondName, String email, String phones) {
         this.firstName = firstName;
         this.secondName = secondName;
         this.email = email;
@@ -19,7 +19,7 @@ public class User {
 
     }
 
-    public List<Phone> getPhones() {
+    public String getPhones() {
         return phones;
     }
 

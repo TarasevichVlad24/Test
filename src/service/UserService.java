@@ -14,7 +14,7 @@ import java.util.List;
 public class UserService {
     private final JDBCUserStorage jdbcUserStorage = new JDBCUserStorage();
 
-public void create(String firstName,String secondName,String email,List<Phone> phones){
+public void create(String firstName,String secondName,String email,String phones){
     User user = new User(firstName,secondName,email, phones);
     jdbcUserStorage.save(user);
 }
